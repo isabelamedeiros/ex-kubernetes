@@ -2,7 +2,7 @@ const path = require('path')
 
 const express = require('express')
 
-const mainRoutes = require('./routes/index')
+const mainRoutes = require('./src/app/routes/index')
 
 const app = express();
 
