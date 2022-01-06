@@ -1,13 +1,14 @@
 apiVersion: v1
-kind: Pod
+kind: Deployment
 metadata:
-  name: training-pod
+  name: training-deployment
   labels:
     app: challenge-express
     type: backend
 spec:
+  replicas: 2
   containers:
   - name: containerisabelamedeiros
     image: isabelamedeirosibm/training:training
     ports: 
-      - containerPort: 8080
+      - containerPort: 5000
