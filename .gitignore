@@ -1,0 +1,42 @@
+# Docker #
+docker-compose*
+
+# Logs #
+/logs
+*.log
+*.log*
+
+# Node files #
+node_modules
+npm-debug.log
+.env
+.npmrc
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+.tmp/
+
+# Typing #
+typings/
+
+# Dist #
+dist
+tsconfig-build.json
+
+# IDE #
+.idea/
+*.swp
+.awcache
+
+# Generated source-code #
+coverage
+package-lock.json
+.vscode
+
+src/**/*.js
+src/**/*.js.map
+package-lock.json
+
+mydb.sql
+.vscode/launch.json

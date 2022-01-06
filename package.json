@@ -1,0 +1,28 @@
+{
+  "name": "projeto-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t nodejs-kubernetes --file Dockerfile .",
+    "docker": "npm run docker:build && npm run docker:run",
+    "docker:run": "docker run -p 3000:3000 -d deployment-nodejs-kubernetes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabelamedeiros/Teste-Node-Kubernetes.git"
+  },
+  "author": "Isabela Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabelamedeiros/Teste-Node-Kubernetes.git/issues"
+  },
+  "homepage": "https://github.com/isabelamedeiros/Teste-Node-Kubernetes.git#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ibm-cloud-env": "^0.3.0",
+    "nodemon": "^2.0.7"
+  }
+}
