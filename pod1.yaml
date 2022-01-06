@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: challenge-express-pod
+  labels:
+    app: challenge-express
+    type: backend
+spec:
+  containers:
+  - name: container-node-kubernetes
+    image: isabelamedeiros/imagem-node-kubernetes
+    ports: 
+      - containerPort: 8080
