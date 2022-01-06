@@ -6,6 +6,7 @@ metadata:
     app: challenge-express
     type: backend
 spec:
+  replicas: 2
   containers:
   - name: containerisabelamedeiros
     image: isabelamedeirosibm/training:training
